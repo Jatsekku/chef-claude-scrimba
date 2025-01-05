@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: Inter, sans-serif;
+    background-color: #FAFAF8;
 }
 
 .header {
@@ -24,4 +25,39 @@ body {
 .header > span {
     font-size: 32px;
     color: #141413;
+}
+
+.main {
+    padding: 30px 30px 10px;
+}
+
+.main > form {
+    display: flex;
+    height: 38px;
+    justify-content: center;
+    gap: 12px;
+}
+
+.main > form > input {
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    padding: 9px 13px;
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 400px;
+}
+
+.main > form > button {
+    font-family: Inter, sans-serif;
+    border-radius: 6px;
+    background-color:#141413;
+    color: #FAFAF8;
+    width: 150px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.main > form > button::before {
+    content: "+";
+    margin-right: 5px;
 }
