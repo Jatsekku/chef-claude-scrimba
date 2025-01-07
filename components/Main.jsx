@@ -3,9 +3,7 @@ import { useState } from 'react'
 export default function Main(){
     const [ingredients, setIngredients] = useState([])
 
-    function handleSubmit(event) {
-        event.preventDefault()
-        const formData = new FormData(event.currentTarget)
+    function addIgrendient(formData) {
         const newIngredient = formData.get("ingredient")
         setIngredients(prevIngredients => [...prevIngredients, newIngredient])
     }
@@ -16,7 +14,7 @@ export default function Main(){
 
     return (
         <main className='main'>
-            <form onSubmit={handleSubmit}>
+            <form action={addIgrendient}>
                 <input
                     type='text'
                     placeholder='e.g. oregano'
