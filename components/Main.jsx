@@ -23,9 +23,10 @@ export default function Main(){
                 />
                 <button>Add ingredient</button>
             </form>
-            <ul>
-                {ingredientsListItem}
-            </ul>
+            {ingredients.length > 0 && <section>
+                <h2>Ingredients on hand:</h2>
+                <ul className='ingredients-list'>{ingredientsListItem}</ul>
+            </section>}
         </main>
     )
 }

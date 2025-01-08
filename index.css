@@ -61,3 +61,12 @@ body {
     content: "+";
     margin-right: 5px;
 }
+
+ul.ingredients-list {
+    margin-bottom: 48px;
+}
+
+ul.ingredients-list > li {
+    color: #475467;
+    line-height: 28px;
+}
